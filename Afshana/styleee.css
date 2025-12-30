@@ -1,0 +1,39 @@
+   body{
+    background-color: brown;
+   }
+   .container{
+        border: 2px solid black;
+        height: 400px;
+        width: 500px;
+        padding-top: 30px;
+        margin: auto;
+        background-color:burlywood;
+        
+        
+        }
+        .input-field{
+            text-align: center;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color: red;
+              }
+              input{
+                height: 70px;
+                width: 400px;
+                background-color: rgb(189, 180, 184);
+                border-radius: 10px;
+                text-align: center;
+                
+              }
+                 i{
+                font-size: 20px;
+                color: rgb(52, 46, 46);
+                
+              }
+    
+            
+        
+            
+        

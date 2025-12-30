@@ -1,0 +1,45 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: cursive;
+        box-sizing: border-box;
+    }
+    body{
+        height: 95vh;
+        width: 100vh;
+        background-image: url('ll.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        height: 400px;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 10px white;
+        padding: 10px;
+    
+        
+    }
+    #search{
+        width: 350px;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        background-color: powderblue;
+    }
+    #temp{
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+    .data{
+        font-size: 30px;
+        text-align: center;
+        color: yellow;
+    }

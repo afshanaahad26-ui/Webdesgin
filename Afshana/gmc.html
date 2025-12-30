@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gmc img{
+            width: 90%;
+        }
+        .header{
+            
+            height: 70px;
+            background-color: #265105;
+            color: white;
+            padding: 10px;
+        
+        }
+        .header i{
+            font-size: 20px;
+            height: 30px;
+            width: 30px;
+            border: 1px solid #263A4F;
+            border-radius: 35%;
+            background-color: #263A4F;
+            margin-left: 20px;
+            
+        }
+        .office{
+            text-align: end;
+            font-size: 20px;
+        }
+        .office i{
+        font-size: 30px;
+         list-style: none;
+        }
+
+        .nav {
+            background-color: #334d1f;
+            padding:10px 0px;
+            height: 60px;
+
+            top: 0;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+
+        .nav li {
+            background-color: #334d1f;
+            padding: 14px;
+        }
+
+        .nav li:hover {
+            background-color: #dadde0;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        section {
+            border: 4px solid whitesmoke;
+            display: flex;
+            gap: 90px;
+            padding: 30px;
+            background-color: #f6fff2;
+            justify-content: space-around;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container h1 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: last baseline;
+            margin-top: 10px;
+            text-decoration: #265105 9px underline;
+
+
+
+
+        }
+
+        .content {
+            width: 67%;
+            font-size: 14px;
+            float: inline-end;
+            margin-top: 20px;
+        }
+
+        .missionvision {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .mission {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin-left: 600px;
+            font-size: 20px;
+
+
+        }
+
+        .vision {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin-left: 100px;
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+
+        .mission ol li {
+            width: 380px;
+            height: 80px;
+
+        }
+
+        .vision ol li {
+            width: 400px;
+            height: 80px;
+        }
+
+        .mission h1 {
+            color: red;
+        }
+
+        .vision h1 {
+            color: red;
+        }
+
+        .yoga img {
+            width: 350px;
+            margin-left: 30px;
+            height: 150px;
+        }
+
+        .yoga {
+            background-color: #34AD54;
+            width: 400px;
+            margin-left: 50px;
+        }
+
+        .scan {
+            background-color: #34AD54;
+            width: 400px;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+
+        .scan img {
+            width: 200px;
+            margin-left: 80px;
+            padding-top: 10px;
+        }
+
+        .footer h1 {
+            width: 400px;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 30px;
+            color: #000000;
+        }
+
+        .orders h1 {
+            margin-left: 35px;
+            margin-top: 10px;
+            text-decoration: underline #263A4F 4px;
+        }
+
+        .row {
+            border: 2px solid #34AD54;
+            width: 400px;
+            height: 280px;
+            margin-top: 10px;
+            margin-left: 30px;
+            color: #34AD54;
+            font-size: 17px;
+        }
+
+        .row ol li {
+            margin-left: 30px
+        }
+
+        .read button {
+            border: 2px solid #dc3545;
+            background-color: #dc3545;
+            width: 9%;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            margin-top: 5px;
+            margin-left: 18%;
+
+        }
+
+        .activities {
+            border: 2px solid #dc3545;
+            width: 400px;
+            color: white;
+            background-color: #dc3545;
+            margin-top: 20px;
+            margin-left: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .committees {
+            border: 2px solid #34AD54;
+            width: 400px;
+            color: white;
+            background-color: #34AD54;
+            margin-top: 20px;
+            margin-left: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .desk h1 {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            text-align: center;
+
+        }
+
+        .profile img {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 250px;
+            height: 200px;
+            margin-left: 30px
+        }
+
+        .name h1 {
+            font-size: 15px;
+            background-color: #263A4F;
+            color: white;
+            padding: 10px;
+            width: 270px;
+            text-align: center;
+            margin-left: 20px
+        }
+
+        .view h2 {
+            background-color: #198754;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-left: 20px;
+            width: 270px;
+            margin-top: 10px;
+        }
+
+
+        .readmore button {
+            background-color: #34AD54;
+            border: none;
+            margin-left: 30%;
+            color: white;
+            padding: 10px;
+            font-size: 15px;
+
+        }
+
+        .readmore button:hover {
+            background-color: #9fc581;
+        }
+
+        .principal-message p {
+            float: right;
+            width: 78%;
+            font-size: 24px;
+            color: #8D9AA8;
+
+
+
+        }
+
+        .principle-desk {
+            border: 2px solid #f6fff2;
+            background-color: #f6fbf4;
+            height: 450px;
+        }
+
+        .events {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .events img {
+            width: 300px;
+            height: 400px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .news h1 {
+            background-color: #334d1f;
+            width: 700px;
+            text-align: center;
+            color: white;
+            padding: 9px;
+            margin-top: 15px;
+        }
+
+        .sections h1 {
+            background-color: #334d1f;
+            width: 500px;
+            text-align: center;
+            color: white;
+            padding: 9px;
+            margin-top: 15px;
+        }
+
+        .sections img {
+            width: 400px;
+            height: 380px;
+            margin-left: 50px;
+        }
+
+        .superintendent {
+            border: 2px solid #f6fbf4;
+            background-color: #ebeff3;
+        }
+
+        .sections h3 {
+            text-align: center;
+            color: red;
+        }
+
+        .sections h4 {
+            text-align: center;
+            color: #000000;
+            font-size: 20px;
+
+        }
+
+        .departments h1 {
+            background-color: #334d1f;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+
+
+        .department-grid {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            width: 100%;
+            align-items: space-evenly;
+            gap: 10px;
+            
+
+
+
+
+        }
+
+        .depRow {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        .department {
+            border: 2px solid #dadde0;
+            width: 395px;
+            height: 140px;
+            background-color: #f8fafc;
+            box-shadow: 10px 10px 15px 15px #f5f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        .department:hover {
+            background-color: #265105;
+            color: white;
+        }
+
+        .department p {
+            text-align: center;
+            font-size: 30px;
+
+
+        }
+
+        .department i {
+
+            color: #198754;
+            font-size: 50px;
+             }
+             .college-info{
+                background-color: #334d1f;
+                padding: 20px;
+                margin-top: 30px;
+                color: #ebeff3;
+                flex-direction: column;
+                  }
+             .college-info h2{
+              width: 300px;
+              text-align: center;
+              margin-left: 40px;
+              font-size: 25px;
+              margin-top: 10px;
+             }
+              .college-info p{
+                padding: 5px;
+                font-size: 20px;
+                margin-top: 10px;
+              }
+           
+             .links-container{
+             display: flex;
+                justify-content: space-between;
+                
+ }
+             .Quick-links{
+                width: 30%;
+                
+             }
+             
+             .Quick-links ol{
+                list-style: none;
+    
+                
+             }
+               .popular-links ol{
+                list-style: none;
+             }
+             
+             .MAP img{
+                width: 270px;
+                height: 180px;
+                border: 1px solid #ddd;
+             }
+             .icons i{
+                background-color: orange;
+                font-size: 25px;
+                padding: 10px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                text-align: center;
+                
+             }
+             .icons i:hover{
+                color: #000000;
+             }
+             .end-section{
+                text-align: center;
+                background-color:#334d1f;
+                color: white;
+                font-family:sans-serif;
+                margin-top: 2px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+             }
+             .end-section h4{
+                color:#ff9933;
+                font-size: 17px;
+             }
+             .end-section h5{
+                color: #ff9933;
+                font-size: 17px;
+             }
+             .end-section h3{
+                font-size: 17px;
+             }
+             .arrow i{
+                background-color: goldenrod;
+                width: 50px;
+                height: 60px;
+                padding: 10px;
+                font-size: 30px;
+                 position: fixed;
+                 bottom: 0;
+                 display: flex;
+             }
+          
+
+           
+             
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+           <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fa-brands fa-twitter"></i>
+         <div class="office">   
+            <i class="fa-solid fa-mobile-vibrate"></i>    
+      <h7>501 (Toll Free), 01955295194 (Associated Hospital), 01955295885 (Main Office, GMC)</h7>
+      </div>
+      </div>
+    
+    <div class="gmc">
+        <img src="gmch.png" alt="">
+    </div>
+
+    <div class="navbar">
+        <div class="nav">
+
+            <ul>
+                <li><a href="home">HOME</a></li>
+                <li><a href="about us">ABOUT US</a></li>
+                <li><a href="departments">DEPARTMENTS</a></li>
+                <li><a href="faculty">FACULTY</a></li>
+                <li><a href="downlods">DOWNLODS</a></li>
+                <li><a href="gallery">GALLERY</a></li>
+                <li><a href="activities">ACTIVITIES</a></li>
+                <li><a href="tenders">TENDERS</a></li>
+                <li><a href="contact us">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image">
+        <img src="hospital-1.jpeg" alt="">
+    </div>
+    <section>
+        <div class="box">
+            <img src="LG.png" alt="">
+            <b>SHRI MANOJ SINHA</b>
+            <p>(Hon'ble Lt Governor,UT of J&K)</p>
+        </div>
+        <div class="box">
+            <img src="CM.jpg" alt="">
+            <b>Shri Omar Abdullah</b>
+            <p>Hon'ble Chief Minister,UT, J&K</p>
+        </div>
+        <div class="box">
+            <img src="Minister.jpg" alt="">
+            <b>Ms. Sakeena Masood Itoo</b>
+            <p>Hon'ble Minister for H&ME Department</p>
+        </div>
+        <div class="box">
+            <img src="abidias.jpg" alt="">
+            <b>Dr Syed Abid Rasheed Shah (IAS)</b>
+            <p>(Administrative Secretary Health & Medical Education Department)</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>Welcome to Government Medical College Handwara</h1>
+    </div>
+    <div class="content">
+        <h2>In 2019 ,the Central government gave its approval for a new Government Medical College to be attached with
+            District hospital Handwara in North Kashmir’s Kupwara District.This Medical College in Jammu and Kashmir’s
+            Kupwara district will be set up at a cost of Rs 325 crores under a centrally -sponsored scheme. Handwara is
+            a sub-district and a town in North Kashmir’s Kupwara district at a distance of around 71 kms from
+            Srinagar.District Kupwara is located in the extreme North of Kashmir and is bound by 170 Km line of actual
+            control (L.O.C.) in the North while the southern portion is bound by District Baramulla. There are three
+            border pocket areas namely, Machil, Keran and Karnah located near L.O.C. which remain cut off from the
+            Kashmir Valley for over 4 months owing to intense snowfall on the high altitude Border Passes connecting
+            these areas. This frontier District of Kashmir Valley is full of scenic beauty. Dense forests and rich wild
+            life make it significant from a tourism and wildlife point of view. District Kupwara is blessed with the
+            beautiful Bangus and Lolab Valley.</h2>
+    </div>
+
+
+    <div class="yoga">
+        <img src="yoga.jpg" alt="">
+    </div>
+    <div class="scan">
+        <img src="scan.png" alt="">
+    </div>
+    <div class="footer">
+        <h1>Share and scan for online ticket generation through Driefcase, EkaCare, PhonePe, and ABHA for ticket token
+            generation</h1>
+    </div>
+    <div class="orders">
+        <h1>Latest Orders & Circulars</h1>
+    </div>
+    <div class="row">
+        <marquee direction="up">
+            <ol>
+                <li>LINK FOR ADMIT CARDS DOWNLOAD FOR JR EXAM.</li>
+                <li>Wirrten MCQ-OMR based test for selection of junior residence in various departments</li>
+                <li>Wirrten MCQ-OMR based test for selection of junior residence in various departments</li>
+                <li>Wirrten MCQ-OMR based test for selection of junior residence in various departments</li>
+                <li>Wirrten MCQ-OMR based test for selection of junior residence in various departments</li>
+                <li>rrten MCQ-OMR based test for selection of junior residence in various departments</li>
+                <li>Wirrten MCQ-OMR based test for selection of junior residence in various departments</li>
+
+
+
+            </ol>
+        </marquee>
+    </div>
+    <div class="read">
+        <button>Read More</button>
+    </div>
+    <div class="activities">
+        <h2>Activities</h2>
+    </div>
+    <div class="committees">
+        <h2>Committees</h2>
+    </div>
+    <div class="missionvision">
+
+
+
+        <div class="mission">
+            <h1>Mission</h1>
+            <ol>
+                <li>Improve healthcare delivery system.</li>
+                <li>Commitment to provide high quality comprehensive patient care to every citizen</li>
+                <li>Maintain high standards in teaching by incorporation of latest advancements in technology and
+                    research
+                    in the medical field.</li>
+                <li>To produce qualified trainers, researchers and professionals for the growth of Medical education.
+                </li>
+            </ol>
+        </div>
+        <div class="vision">
+            <h1>Vision</h1>
+            <ol>
+                <li>Imparting medical education of the highest standards to students & paramedics.</li>
+                <li>To provide best and quality healthcare services so as to decrease the referral to minimum</li>
+                <li>To Serve the underserved</li>
+                <li>To become a centre of excellence and global resource in the field of Medical Education.</li>
+                <li>To aid in the development of sound mind and sound body by ensuring the staff and students to
+                    participat in extra and co-curricular activities</li>
+
+            </ol>
+
+        </div>
+    </div>
+    <div class="principle-desk">
+
+        <div class="desk">
+            <h1>From The Principal's Desk</h1>
+        </div>
+        <div class="principal-message">
+            <p>Guiding this institution involves ensuring the delivery of comprehensive healthcare to patients with a
+                primary emphasis on ethical practices. It entails understanding the community's needs and striving to
+                fulfil
+                them to the best of our ability, as well as providing guidance and mentorship to our college students &
+                staff to enhance their clinical skills & ensuring their accountability. Additionally, it involves
+                equipping
+                our hospital with latest medical facilities to offer the best possible healthcare to underprivileged
+                sections of society and fostering a research-driven environment that complements the theoretical aspects
+                of
+                medicine by emphasizing practical applications of modern healthcare
+
+        </div>
+        <div class="profile">
+            <img src="DR K.jpeg">
+        </div>
+        <div class="name">
+            <h1>PROF (DR) KHURSHID AHMAD WANI</h1>
+        </div>
+        <div class="view">
+            <h2>click here to view profile</h2>
+        </div>
+        <div class="readmore">
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="events">
+        <div class="news">
+            <h1>News & Events</h1>
+            <img src="cme (1).jpeg" alt="">
+            <img src="feeding.jpeg" alt="">
+        </div>
+
+        <div class="sections">
+            <h1>Medical Superintendent</h1>
+            <img src="AijazAhmadBhat.jpeg" alt="">
+            <div class="superintendent">
+                <h3>Dr Aijaz Ahmad Bhat</h3>
+                <h4>Associated District Hospital Handwara</h4>
+            </div>
+        </div>
+    </div>
+    <div class="departments">
+        <h1>OUR DEPARTMENTS</h1>
+        <div class="department-grid">
+            <div class="depRow">
+                <div class="department">
+                    <i class="fa-sharp-duotone fa-regular fa-hospital"></i>
+                    <p>Ophthamology</p>
+                </div>
+                <div class="department">
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <p>Anaesthesia</p>
+                </div>
+                <div class="department">
+                    <i class="fa-solid fa-bed"></i>
+                    <p>Genreal Surgery</p>
+
+                </div>
+            </div>
+
+            <div class="depRow">
+                <div class="department">
+                    <i class="fa-sharp-duotone fa-regular fa-hospital"></i>
+                    <p>Obsterics & Gynaecology</p>
+
+                </div>
+                <div class="department">
+                    <i class="fa-sharp-duotone fa-regular fa-hospital"></i>
+                    <p>Forensic Medicine</p>
+
+                </div>
+                <div class="department">
+                    <i class="fa-sharp-duotone fa-regular fa-hospital"></i>
+                    <p>Psychiatry</p>
+
+                </div>
+
+            </div>
+
+            <div class="depRow">
+                <div class="department">
+                    <i class="fa-sharp-duotone fa-regular fa-hospital"></i>
+                    <p>Dermatology</p>
+
+                </div>
+                <div class="department">
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <p>Orthopaedics</p>
+
+                </div>
+                <div class="department">
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <p>Psychiatry</p>
+
+                </div>
+
+            </div>
+
+            <div class="depRow">
+                <div class="department">
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <p>Blood Center</p>
+
+                </div>
+                <div class="department">
+                    <i class="fa-sharp-duotone fa-regular fa-hospital"></i>
+                    <p>ENT</p>
+
+                </div>
+                <div class="department">
+                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <p>library</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="college-info">
+        <div class="set">
+        <h2>Goverment Medical College Handwara</h2>
+        <div class="contact-info">
+            <p>Handwara</p>
+            <p>principal@gmchandawra@gmail.com</p>
+            <p>501 (Toll Free),:01478523654(unservered)</p>
+            </div>
+        </div>
+        <div class="links-container">
+                    <div class="MAP">
+        <img src="MAP.webp" alt="">
+    </div>
+        <div class="Quick-links">
+            <h3>QUICK LINKS</h3>
+            <ol>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Departments</li>
+                <li>Faculty</li>
+                <li>Facilities</li>
+                <li>Downloads</li>
+                <li>Committess</li>
+            </ol>
+        </div>
+     
+        <div class="popular-links">
+            <h3>POPULAR LINKS</h3>
+            <ol>
+                <li>Tenders</li>
+                <li>Gallery</li>
+                <li>Contact US</li>
+                <li>Activities</li>
+                <li>Lastest Blog</li>
+            </ol>
+        </div>
+        </div>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+    </div>
+    <div class="end-section">
+        <h4>© GMC Handwara.</h4>
+        <h3>All Rights Reserved. </h3>
+        <h5> Designed by Say Technologies</h5>
+        
+  
+    </div>
+    <div class="arrow">
+        <button><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    
+</body>
+
+</html>

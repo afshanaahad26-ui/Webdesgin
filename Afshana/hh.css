@@ -1,0 +1,27 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+    }
+    body{
+        width: 100px;
+        min-height: 100vh;
+        background: wheat;
+    }
+    header{
+        height: 60px;
+        width: 900px;
+        background: rgb(136, 127, 127);
+        
+    }
+    .container{
+        width: 100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        border-left-width: 15px;
+    }
